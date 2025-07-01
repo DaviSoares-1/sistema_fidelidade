@@ -90,6 +90,7 @@ const ClienteFormModal = ({ onClose, onSubmit, clienteEditando }) => {
 							value={dataLavagem}
 							onChange={(e) => setDataLavagem(e.target.value)}
 							className="w-full p-2 rounded border"
+							required
 						/>
 					</div>
 

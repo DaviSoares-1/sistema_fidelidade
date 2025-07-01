@@ -9,10 +9,9 @@ function PromoSection({ clientes }) {
   );
 
   // Mapeia os clientes com a quantidade de vezes que atingiram múltiplos de 8
-  const listaPromo = clientesComPromocao.map((cliente, index) => ({
+  const listaPromo = clientesComPromocao.map((cliente) => ({
     ...cliente,
     vezes: Math.floor(Number(cliente.lavagens) / 8),
-    numero: index + 1,
   }));
 
   return (
