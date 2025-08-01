@@ -39,13 +39,13 @@ function ClienteTable({ clientes, onEditar, onExcluir }) {
               <td className="border border-gray-600 px-3 py-2 space-x-2">
                 <button
                   onClick={() => onEditar(cliente)}
-                  className="bg-yellow-400 hover:bg-yellow-500 text-white px-3 py-1 rounded text-sm"
+                  className="bg-yellow-400 hover:bg-yellow-500 text-white px-3 py-1 rounded text-sm cursor-pointer"
                 >
                   Editar
                 </button>
                 <button
                   onClick={() => onExcluir(cliente.id)}
-                  className="bg-red-600 hover:bg-red-700 text-white px-3 py-1 rounded text-sm"
+                  className="bg-red-600 hover:bg-red-700 text-white px-3 py-1 rounded text-sm cursor-pointer"
                 >
                   Excluir
                 </button>

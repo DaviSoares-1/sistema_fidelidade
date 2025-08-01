@@ -1,6 +1,6 @@
 import React from "react";
 
-function TrashSection({ lixeira = [], onRestaurar, onEsvaziar }) {
+function TrashSection({ lixeira = [], onRestaurar,  onClear }) {
   return (
     <div className="mt-10">
       <h2 className="text-2xl font-bold mb-4 text-white">
@@ -22,7 +22,7 @@ function TrashSection({ lixeira = [], onRestaurar, onEsvaziar }) {
                 </span>
                 <button
                   onClick={() => onRestaurar(cliente.id)}
-                  className="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 rounded"
+                  className="bg-blue-600 hover:bg-blue-700 text-white px-3 py-1 rounded cursor-pointer"
                 >
                   Restaurar
                 </button>
@@ -31,8 +31,8 @@ function TrashSection({ lixeira = [], onRestaurar, onEsvaziar }) {
           </ul>
 
           <button
-            onClick={onEsvaziar}
-            className="mt-4 bg-red-700 hover:bg-red-800 text-white px-6 py-2 rounded shadow"
+            onClick={onClear}
+            className="mt-4 bg-red-700 hover:bg-red-800 text-white px-6 py-2 rounded shadow cursor-pointer"
           >
             Esvaziar Lixeira
           </button>

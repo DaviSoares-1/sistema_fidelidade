@@ -155,21 +155,21 @@ function App() {
 
 				<button
 					onClick={handleFiltrar}
-					className="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded shadow"
+					className="bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded shadow cursor-pointer"
 				>
 					Buscar
 				</button>
 
 				<button
 					onClick={limparFiltro}
-					className="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded shadow"
+					className="bg-gray-600 hover:bg-gray-700 text-white px-4 py-2 rounded shadow cursor-pointer"
 				>
 					Limpar Filtro
 				</button>
 
 				<button
 					onClick={exportarPDF}
-					className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded shadow"
+					className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded shadow cursor-pointer"
 				>
 					Baixar PDF
 				</button>
